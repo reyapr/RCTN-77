@@ -1,0 +1,9 @@
+.navbar {
+  display: flex;
+  gap: 5px;
+  border-bottom: 1px solid;
+
+  a {
+    text-decoration: none;
+  }
+}
