@@ -76,6 +76,9 @@ function App() {
           </Typography>
         </Box>
       </Box>
+      <Box display={"flex"} justifyContent={"flex-end"}>
+        <Button variant="contained">Click Me</Button>
+      </Box>
       {/* <Example1 /> */}
       {/* <br /> */}
       {/* <Example2 /> */}

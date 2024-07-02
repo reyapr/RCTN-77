@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -5,10 +6,15 @@ const Login = () => {
   const navigate = useNavigate();
   const prevPathname = location.state?.from?.pathname || "/";
   const token = localStorage.getItem("token");
+  // if (token) {
+  //   navigate("/");
+  // }
 
-  if (token) {
-    navigate("/");
-  }
+  // useEffect(() => {
+  //   if (token) {
+  //     navigate("/");
+  //   }
+  // }, [token]);
 
   const handleLogin = () => {
     localStorage.setItem("token", "123");
