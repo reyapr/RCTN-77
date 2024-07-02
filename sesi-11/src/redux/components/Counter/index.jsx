@@ -5,7 +5,6 @@ import { decrement, increment } from "../../actions/counter";
 
 const Counter = () => {
   const counter = useSelector((state) => {
-    console.log(state, "state");
     return {
       title: state.counter.title,
       value: state.counter.value,
