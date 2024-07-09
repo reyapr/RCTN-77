@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, Divider, Typography } from "@mui/material";
+import { Button, Divider, Typography } from "@mui/material";
 import styles from "./index.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
