@@ -1,0 +1,16 @@
+.button {
+  margin: 20px !important;
+}
+
+.table {
+  margin-left: 20px;
+}
+
+.th {
+  background-color: black;
+  color: white !important;
+}
+
+.tr {
+  background-color: #f5f5f5;
+}
