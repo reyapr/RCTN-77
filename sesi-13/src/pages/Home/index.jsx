@@ -1,8 +1,10 @@
 import { Button, Card, CardContent, Divider, Typography } from "@mui/material";
 import styles from "./index.module.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Home = () => {
+  const [count, setCount] = useState(0);
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -26,6 +28,16 @@ const Home = () => {
           color="primary"
         >
           Users List
+        </Button>
+      </div>
+      <div className={styles.card}>
+        <h2>Counter</h2>
+        <h3 data-testid="count">{count}</h3>
+        <Button data-testid="increment" onClick={() => setCount(count + 1)}>
+          +
+        </Button>
+        <Button data-testid="decrement" onClick={() => setCount(count - 1)}>
+          -
         </Button>
       </div>
     </div>

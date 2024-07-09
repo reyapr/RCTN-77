@@ -61,9 +61,12 @@ const Users = () => {
               </TableCell>
             </TableRow>
           </TableHead>
-          <TableBody>
+          <TableBody data-testid="tbody">
             {users.map((user, idx) => (
-              <TableRow key={user.id} className={idx % 2 === 0 && styles.tr}>
+              <TableRow
+                key={user.id}
+                className={idx % 2 === 0 ? styles.tr : ""}
+              >
                 <TableCell>
                   <Typography>{user.id}</Typography>
                 </TableCell>
